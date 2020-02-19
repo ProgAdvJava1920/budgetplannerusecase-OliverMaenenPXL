@@ -9,6 +9,12 @@ public class Account {
     private String name;
     private List<Payment> payments;
 
+    public Account(String IBAN, String name, List<Payment> payments) {
+        this.IBAN = IBAN;
+        this.name = name;
+        this.payments = payments;
+    }
+
     public String getIBAN() {
         return IBAN;
     }
